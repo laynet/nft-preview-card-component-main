@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$dark-blue-main: hsl(217, 54%, 11%);
+$dark-blue-card: hsl(216, 50%, 16%);
+$dark-blue-line: hsl(0, 0%, 100%);
+$white: #FFFFFF;
+
+
+$font-family: 'Outfit';
+
+* {
+    font-family: $font-family;
+}
+
+
+body {
+    background: $dark-blue-main;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: $white;
+    
+}
+
+p {
+    font-size: 18px;
+    color: $soft-blue;
+    font-weight: 300;
+}
+
+img {
+    width: 99%;
+    display: block;
+    // margin: 0 auto;
+    border-radius: 8px;
+}
+
+.avatar {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: left;
+    margin-right: 20px;
+    height: 33px;
+    width: 33px;
+}
+
+.icon {
+    .etherium {
+        width: 11px;
+        height: 11px; 
+    }
+    .clock {
+       width: 16px;
+       height: 16px; 
+    }
+  
+}
+
+.card {
+    background: $dark-blue-card;
+    width: 60%;
+    max-width: 300px;
+    padding: 24px;
+    border-radius: 8px;
+    
+}
+
+span {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  
+    
+}
+.eyebrow {
+    justify-content: space-between;
+
+    .bing-bong {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
