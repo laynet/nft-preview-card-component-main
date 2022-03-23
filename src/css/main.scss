@@ -35,6 +35,15 @@ p {
     font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: $cyan;
+        cursor: pointer;
+    }
+}
+
 img {
     width: 99%;
     display: block;
@@ -53,11 +62,11 @@ img {
 }
 
 .icon {
-    .etherium {
-        width: 11px;
-        height: 11px; 
+    &.etherium {
+        width: 50%;
+        height: 50%; 
     }
-    .clock {
+    &.clock {
        width: 16px;
        height: 16px; 
     }
@@ -87,6 +96,38 @@ span {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+
+
+.card-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+    img {
+        &:hover {
+            opacity: 50.3%;
+            background-color: $cyan;
+        }
+    }
+
+    a {
+        display: block;
+        position: absolute;
+        top: -100%;
+        opacity: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        // text-align: center;
+        // color: inherit;
+        &:hover {
+            opacity: 1;
+            top: 0;
+            // z-index: 500;
+        }
     }
 }
 
