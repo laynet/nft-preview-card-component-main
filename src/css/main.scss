@@ -38,18 +38,55 @@ p {
 a {
     text-decoration: none;
     color: inherit;
-    &:hover {
-        color: $cyan;
-        cursor: pointer;
+    cursor: pointer;
+    display: block;
+    position: relative;
+   
+    
+
+}
+a:hover {
+    color: $cyan;
+    
+}
+
+.card-image {
+    position: relative;
+    // background-color: $cyan;
+    border-radius: 8px;
+    max-width: 100%;
+    display: block;
+    // overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+        // margin: 0 auto;
+        border-radius: 8px;
+
+        
     }
 }
 
-img {
-    width: 99%;
-    display: block;
-    // margin: 0 auto;
-    border-radius: 8px;
-}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: $cyan;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+  }
+  
+  .card-image:hover .overlay {
+    opacity: 1;
+    background: hsla(178, 100%, 50%, 0.4);
+  }
 
 .avatar {
     border: 1px solid #FFFFFF;
@@ -76,7 +113,7 @@ img {
 .card {
     background: $dark-blue-card;
     width: 60%;
-    max-width: 300px;
+    max-width: 350px;
     padding: 24px;
     border-radius: 8px;
     
@@ -101,35 +138,7 @@ span {
 
 
 
-.card-image {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
 
-    img {
-        &:hover {
-            opacity: 50.3%;
-            background-color: $cyan;
-        }
-    }
-
-    a {
-        display: block;
-        position: absolute;
-        top: -100%;
-        opacity: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        // text-align: center;
-        // color: inherit;
-        &:hover {
-            opacity: 1;
-            top: 0;
-            // z-index: 500;
-        }
-    }
-}
 
 
 
@@ -144,3 +153,42 @@ span {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+// &:before {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     content: '';
+//     background-color: $cyan;
+//     //me trying some bullshit
+//     border-radius: 8px;
+//     opacity: 0;
+//     top: 0;
+//     left: 0;
+//     transition: ease 0.3s;
+
+//     &:hover {
+//         opacity: 0.503;
+//     }
+// }
+// &:after {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     content: '';
+//     background-image: url('../images/icon-view.svg');
+
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     opacity: 0;
+//     top: 0;
+//     left: 0;
+//     transition: ease 0.3s;
+
+//     &:hover {
+//         opacity: 1;
+//     }
+    
+// }
