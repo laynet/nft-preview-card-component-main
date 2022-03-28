@@ -4,8 +4,8 @@ $soft-blue: hsl(215, 51%, 70%);
 $cyan: hsl(178, 100%, 50%);
 $dark-blue-main: hsl(217, 54%, 11%);
 $dark-blue-card: hsl(216, 50%, 16%);
-$dark-blue-line: hsl(0, 0%, 100%);
-$white: #FFFFFF;
+$dark-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
 
 
 $font-family: 'Outfit';
@@ -39,7 +39,7 @@ a {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-    display: block;
+    // display: block;
     position: relative;
    
     
@@ -50,22 +50,23 @@ a:hover {
     
 }
 
+hr {
+    border: none;
+    height: 1px;
+   background: $dark-blue-line;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .card-image {
     position: relative;
-    // background-color: $cyan;
     border-radius: 8px;
     max-width: 100%;
     display: block;
-    // overflow: hidden;
-
-    img {
-        width: 100%;
-        display: block;
-        // margin: 0 auto;
-        border-radius: 8px;
-
-        
-    }
+  
 }
 
 .overlay {
@@ -119,21 +120,13 @@ a:hover {
     
 }
 
-span {
+.flex {
     display: flex;
-    justify-content: left;
     align-items: center;
-  
-    
 }
+
 .eyebrow {
     justify-content: space-between;
-
-    .bing-bong {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 
