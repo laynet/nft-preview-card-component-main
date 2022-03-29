@@ -12,5 +12,6 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
     "parcel": "^2.3.2"
-  }
+  },
+  "homepage": "https://laynet.github.io/nft-preview-card-component-main/"
 }
