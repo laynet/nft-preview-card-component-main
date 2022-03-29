@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/nft-ss.png)
+![](src/images/nft-ss.png)
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/a-simple-card-component-with-interactive-elements-made-with-html5-sas-SJmg0qxXc)
-- Live Site URL: (https://laynet.github.io/nft-preview-card-component-main/)
+- Solution URL: [solution](https://www.frontendmentor.io/solutions/a-simple-card-component-with-interactive-elements-made-with-html5-sas-SJmg0qxXc)
+- Live Site URL: [live site](https://laynet.github.io/nft-preview-card-component-main/)
 
 ## My process
 
