@@ -25,6 +25,7 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
+    
 }
 
 .card {
@@ -45,6 +46,7 @@ img {
     cursor: pointer;
     position: relative;
     height: 100%;
+    
 }
 
 .overlay {
@@ -136,10 +138,6 @@ hr {
 @media screen and (min-width: 768px) {
     .container {
       max-width: 340px;
-    }
-  
-    .avatar {
-      border-color: transparent;
     }
   }
 
